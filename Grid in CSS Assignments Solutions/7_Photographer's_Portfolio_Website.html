@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer's Portfolio Website</title>
+    <style>
+      .Photographers-Portfolio-container {
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+      .photo-1 {
+        /* border: 2px solid black; */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .photo-2 {
+        /* border: 2px solid black; */
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .photo-3 {
+        /* border: 2px solid black; */
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .photo-4 {
+        /* border: 2px solid black; */
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .photo-5 {
+        /* border: 2px solid black; */
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      .photo-6 {
+        /* border: 2px solid black; */
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 7. Design a visually stunning photo gallery using CSS Grid for a photographer's portfolio website. The goal is to 
+            create a dynamic layout that showcases the photographer's images in an organized and visually appealing 
+            manner. By leveraging the power of CSS Grid, ensure that the gallery provides a seamless and immersive 
+            user experience, allowing visitors to easily navigate through the photos and appreciate the photographer's 
+            work. -->
+    <section class="Photographers-Portfolio-container">
+      <div class="photo-1">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-landscape-sunset-deogyusan-national-park-winter-south-korea_335224-434.jpg?w=740&t=st=1691491579~exp=1691492179~hmac=161451c60610c4d8cde3800305a1696d4a3d7b7ffa888c3637dc5a0ae89c27d9"
+          alt="photo01"
+        />
+        <!-- https://img.freepik.com/free-photo/beautiful-landscape-sunset-deogyusan-national-park-winter-south-korea_335224-434.jpg?w=740&t=st=1691491579~exp=1691492179~hmac=161451c60610c4d8cde3800305a1696d4a3d7b7ffa888c3637dc5a0ae89c27d9 -->
+      </div>
+      <div class="photo-2">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/06/18/22/03/blooming-2417396_1280.jpg"
+          alt="photo02"
+        />
+        <!-- https://cdn.pixabay.com/photo/2017/06/18/22/03/blooming-2417396_1280.jpg -->
+      </div>
+      <div class="photo-3">
+        <img
+          src="https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?w=740&t=st=1691491625~exp=1691492225~hmac=c0768f1ccb8c25700a935cb371ad61f548371ed553e609763aee8f885756403c"
+          alt="photo03"
+        />
+        <!-- https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?w=740&t=st=1691491625~exp=1691492225~hmac=c0768f1ccb8c25700a935cb371ad61f548371ed553e609763aee8f885756403c -->
+      </div>
+      <div class="photo-4">
+        <img
+          src="https://images.pexels.com/photos/8258043/pexels-photo-8258043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="photo04"
+        />
+        <!-- https://images.pexels.com/photos/8258043/pexels-photo-8258043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
+      </div>
+      <div class="photo-5">
+        <img
+          src="https://images.pexels.com/photos/5473010/pexels-photo-5473010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="photo05"
+        />
+        <!-- https://images.pexels.com/photos/5473010/pexels-photo-5473010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" -->
+      </div>
+      <div class="photo-6">
+        <img
+          src="https://images.pexels.com/photos/9391321/pexels-photo-9391321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="photo06"
+        />
+        <!-- https://images.pexels.com/photos/9391321/pexels-photo-9391321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Create a sticky note in Landing page using CSS Transform to rotate
+      anticlockwise by Hovering it
+    </title>
+    <style>
+      .card {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 320px;
+        margin: 140px auto;
+        background: linear-gradient(to right, #45a4dd 18%, #334ec2) 100%;
+        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        scale: 1.2 1.2;
+      }
+      .serialno-date-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      .serialno-date-part p {
+        color: white;
+      }
+      .markAsDoneButton-part input {
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: linear-gradient(to right, #45dddb 15%, #33c25b 100%);
+        font-weight: bold;
+        margin-top: 8px;
+      }
+      .card:hover {
+        transform: rotate(-45deg);
+        scale: 1 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 3. Transforming an element by an angle using CSS transform is important as it allows for the creation of 
+visually dynamic and engaging web designs by rotating elements. In this coding challenge let’s create a 
+sticky note and on hovering the sticky note, it should transform by rotating 90 degrees anti-clockwise. These 
+types of transformations are usually implemented on the landing pages. Below are the images for reference. -->
+    <div class="card">
+      <div class="serialno-date-part">
+        <h1>#01</h1>
+        <p>Created On : 01/01/2023</p>
+      </div>
+      <div class="important-dates-part">
+        <h1>Important dates</h1>
+        <ul>
+          <li>January 26 - Republic Day</li>
+          <li>August 15 - Independence Day</li>
+          <li>October 2 - Gandhi Jayanti</li>
+          <li>August 29 - National Sports Day</li>
+        </ul>
+      </div>
+      <div class="markAsDoneButton-part">
+        <input type="button" value="Mark as Done" />
+      </div>
+    </div>
+  </body>
+</html>

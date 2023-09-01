@@ -1,0 +1,71 @@
+3. What is web accessibility? List some of the assistive devices which play a major role in providing accessibility ?
+
+What is web accessibility:
+--------------------------
+Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them. More specifically, people can:
+
+i)perceive, understand, navigate, and interact with the Web
+ii)contribute to the Web
+
+Web accessibility encompasses all disabilities that affect access to the Web, including:
+
+auditory
+cognitive
+neurological
+physical
+speech
+visual
+
+Web accessibility also benefits people without disabilities, for example:
+
+i)people using mobile phones, smart watches, smart TVs, and other devices with small screens, different input modes, etc.
+ii)older people with changing abilities due to ageing
+iii)people with “temporary disabilities” such as a broken arm or lost glasses
+iv)people with “situational limitations” such as in bright sunlight or in an environment where they cannot listen to audio
+v)people using a slow Internet connection, or who have limited or expensive bandwidth
+
+List some of the assistive devices which play
+--------------------------------------------- a major role in providing accessibility:
+----------------------------------------
+
+1. Screen Readers
+-----------------
+A screen reader is an assistive device used by visually impaired or blind users, it reads aloud the information on a computer screen. According to the American Foundation for the Blind (AFB), “Electronic text is sent to a speech synthesizer (text-to-speech) or a refreshable braille display. The user is then able to hear the text spoken or read it tactilely with the refreshable braille display.”
+
+Screen reader users can choose from hundreds of available commands to carry out their tasks. These activities may involve reading short passages or whole articles, browsing websites, and/or making purchases. This, however, requires that the website or app be developed with global accessibility in mind.
+
+2. Reading Assistants
+---------------------
+People with cognitive, learning and neurological disabilities, such as dyslexia and also visually impaired people are greatly benefitted from reading assistants. Many reading aids exist to help users alter the display of text on the web so that it better suits their requirements, such as:
+
+i)Changing the size, color, and spacing of text and pictures
+ii)Increasing or decreasing the size of text and images
+iii)Using a text-to-speech synthesizer, such as a screen reader
+iv)Refreshable Braille for reading text
+v)Simplified reading modes that conceal less important elements of the material (such as sidebars and header sections)
+vi)Various methods of browsing web pages (including a hierarchical menu and search) are all options for those with visual impairments.
+
+3. Voice Recognition
+--------------------
+People with physical disabilities who are unable to use a keyboard or mouse, as well as individuals with cognitive or learning disabilities such as dyslexia, who may have trouble with spelling and sentence structure, can benefit from dictation or voice recognition, an emerging field of assistive technology.
+
+People may use voice-to-text assistive technology to write by speaking aloud, with spoken words translating into digital texts that can then be used for tasks like surfing the web, sending emails, or using a navigation app. Voice recognition might also be helpful for those who find typing to be too exhausting, uncomfortable, or impossible.
+
+While there are a variety of speech recognition software options, not all users will have the same experience on the web. Content, such as that provided by a variety of third-party speech-driven solutions, must be developed and programmed with voice control in mind.
+
+4. Switch Devices
+-----------------
+People with motor disabilities may use a switch device, a kind of assistive technology, to access and operate electronic equipment such as computers, cellphones, electric wheelchairs, communication devices, and more, without needing to use a keyboard or mouse. There are a lot of variables to consider while deciding on the ideal switch device, including personal taste, portability, and the user’s preferred configuration.
+
+One common design is a big, round button that may be pressed with the hand, foot, or whatever else is convenient. Focus indication on the screen will automatically cycle between various site elements, and the user may click by activating the switch.
+
+However, the switch devices sometimes run into trouble with websites that are not accessible. Here are some common barriers faced by switch device users:
+
+i)The website or the UI does not fully support keyboard navigation
+ii)The time duration provided to respond or complete tasks like filling up forms is inadequate
+
+5. Graphic Organizers
+---------------------
+Students may benefit from using graphic organizers to plan their writing before they begin drafting. Students with writing disabilities, such as dysgraphia, may benefit greatly from the use of graphic organizers as a kind of assistive technology, especially for the conceptual components of writing.
+
+Using a graphic organizer allows students to map out their next steps. The graphic organizer may direct the author to describe an item, plot out a sequence of events, or do any number of other actions that will aid in the composition process.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover to reveal the image.</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 50px;
+      }
+      .image {
+        /* border: 2px solid black; */
+        width: 800px;
+        height: 500px;
+        display: flex;
+        margin: 20px auto;
+      }
+      img {
+        width: 100%;
+        border: 5px solid black;
+        filter: blur(20px);
+      }
+      img:hover {
+        filter: blur(0px);
+        transition: 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 5. In this coding challenge, create a simple webpage that initially applies a blur effect to an image, and upon 
+hovering over it, the image gradually becomes clear and revealed. Such effects are commonly utilized when 
+unveiling new offers or showcasing hidden content. -->
+    <h1>Hover To Reveal The Image.</h1>
+    <div class="image">
+      <img
+        src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/places-to-live-in-bangalore.jpg"
+        alt="image01"
+      />
+    </div>
+  </body>
+</html>

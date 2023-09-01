@@ -1,0 +1,172 @@
+1. List out the features of HTML5 ?
+
+What is HTML5 ?
+---------------
+
+HTML5 is the new HTML standard. HTML4.01 was the previous version, released in 1999. Since then, the internet has evolved significantly. HTML5 is still in its infancy. HTML5 is a new standard for HTML, XHTML, and the HTML Document Object Model (DOM).
+
+HTML5 isn’t a brand-new technology. The majority of HTML5 standards are derived from HTML or HTML 1.0. HTML files may be read by a web browser and turned into visual or audio web pages.
+
+Top Features of HTML5:
+----------------------
+1)Video and Audio Features
+2)Header and Footer
+3)Input tag kinds have been expanded.
+4)Figure and figcaption
+5)Placeholders
+6)Preload Videos
+7)Controlling the display
+8)Regular Expressions
+9)Adaptability
+10)Elements that appear inline
+11)Support for Dynamic Pages
+12)Email as a property
+13)Cryptographic Nonces
+14)Reverse Links
+15)Images with a width of zero
+16)Canvas in HTML5
+17)Geolocation API
+18)Local storage
+19)New Structural Elements
+20)Form Improvements
+
+1)Video and Audio Features: 
+---------------------------
+HTML5 has two crucial additions: audio and video tags. It enables web developers to include a video or audio file on their pages. The video element in HTML5 may be styled using CSS and CSS. Borders, opacity, reflections, gradients, transitions, transformations, and even animations may all be changed. YouTube also declares video embedding by providing the code to use to embed their videos on other websites. It contributes to the web being increasingly engaged with multimedia. HTML5 includes a new element, the audio tag, which is accessible for use, which is used to embed any audio file into a webpage on the Internet. 
+
+2)Header and Footer:
+--------------------
+These new tags eliminate the requirement for a div> tag to separate the two parts. The footer appears at the bottom of the page, whereas the header appears at the top. The browser will know what to load first and what to load later if you use the HTML5 elements header and footer.
+
+The header may include the following information:
+
+i)There are one or more header components (h1 – h6).
+ii)Icon or logo
+iii)Authorship Information 
+
+3)Input tag kinds have been expanded:
+-------------------------------------
+Input is an old attribute that has been resurrected in HTML with new values such as email, month, number, range, search, tel, color, week, URL, time, date, DateTime-local, and so on.
+
+These are the new values that the input tag may include.
+
+3)i)ContentEditable
+-------------------
+It’s a characteristic that allows the user to make changes to the content. It makes determining What You See Is What You Get a breeze. By clicking on the content, you will be able to change it.
+
+3)ii)Progress
+-------------
+This tag is used to monitor the status of a job while it is being completed. You may use the progress tag in conjunction with JavaScript. It’s similar to a progress bar.
+
+3)iii)section
+-------------
+The section tag is used to split a document into sections or pieces. For instance, an article may include many parts, such as a header, footer, newest news, and a section for the primary material, among others.
+
+3)iv)Main
+---------
+Main is a tag that is used to encapsulate the page’s primary content. There can’t be more than one main tag in a document, and this tag can’t be within the article aside, footer, or header tags. The navigation bar, header, and footer are not included. 
+
+4)Figure and figcaption:
+------------------------
+Previously, there was no way to add a figure to a document while also providing a caption. It is now semantically possible to include an image into a page together with its description, thanks to the introduction of the figure and figcaption tags. 
+
+Syntax
+------
+<figure>
+    <img src="image/image-1.jpg" alt="About ADMEC" />
+        <figcaption>
+             <p>This is our institute </p>
+        </figcaption>
+</figure>
+
+5)Placeholders: 
+---------------
+To make placeholders for text boxes before, we had to use a little JavaScript. Sure, you may customize the value property as you see appropriate at first, but the input will be left blank if the user deletes that content and clicks away. This is fixed by using the placeholder property.
+
+6)Preload Videos:
+-----------------
+It’s a fantastic function for sharing videos. It describes how to upload the video as well as how long the website will take to load. This informs the browser about the enhancements made to the webpage’s user experience. Though this isn’t a must-have feature, You should include it. It aids in a more accurate portrayal of the page.
+
+7)Controlling the display:
+--------------------------
+The display property is used to determine how elements behave. The default values are used if this attribute is not supplied.
+
+8)Regular Expressions:
+----------------------
+We may use a regular expression to add a certain pattern as an input. The most frequent pattern, for example, is [A-Za-z] 5,11. It will take both capital and lowercase letters. It also indicates that the minimum character length is five, and the maximum permissible character length is 11.
+
+9)Adaptability:
+---------------
+HTML5 has played a significant part in giving the finest accessibility features to a website since its inception. The usage of the website has been streamlined as a result of this. People with practically any form of handicap, such as vision impairment, color blindness, poor vision, blindness, and so on, may use websites built using HTML5’s accessibility capabilities.
+
+Validation, for example, is the finest example of giving accessibility in forms. Labels must be clearly indicated.
+
+10)Elements that appear inline:
+-------------------------------
+In order to maintain code up to date, these inline items are quite useful:
+
+i)mark: It draws attention to stuff that has been marked in some manner.
+ii)Time: This is used to display the current time and date on the website.
+iii)Meter: It indicates how much space on the storage drive is still available.
+iv)Progress bar: It allows you to track the progress of a task that has been assigned to you.
+
+11)Support for Dynamic Pages:
+-----------------------------
+Instead of static websites, dynamic and interactive websites are in demand these days. Several aspects give the website a dynamic feel:
+
+i)mark – It draws attention to stuff that has been marked in some manner.
+ii)Time — This is used to display the current time and date on the website.
+iii)Meter – It indicates how much space on the storage drive is still available.
+iv)Progress bar – It allows you to track the progress of a task that has been assigned to you. There are other more aspects that help to make the website dynamic.
+
+12)Email as a property:
+-----------------------
+When we write the kind of email in a form, the browser automatically takes the command from the code to produce an email in the right and valid format. In previous browsers, this was not feasible.
+
+13)Cryptographic Nonces:
+------------------------
+We may now apply cryptographic nonces to all styles and scripts in this latest version of HTML. Inside the script and style tags, we normally employ the nonce attribute. This nonce tag, in essence, produces a random number that is only used once.
+
+As a result, every time the page is refreshed, it gets regenerated. It’s a fantastic feature since it may be utilized to improve the security of the page’s content—this aids in declaring and permitting the website to select a certain script or style.
+
+14)Reverse Links:
+-----------------
+With HTML 5.1, the rev property for reverse links is back in play. It essentially enables web users to utilize the link and anchor tag components once again. In addition, it describes the connection between the current document and the linked document in reverse order.
+
+15)Images with a width of zero:
+-------------------------------
+The width of the pictures may now be set to zero by site developers. This function comes in handy when there’s no need to reveal them to consumers, such as when monitoring picture files since it would take up more space otherwise. It is recommended to utilize photos with a zero width and an empty alt tag. 
+
+16)Canvas in HTML5:
+-------------------
+A canvas is a rectangular area that may be used to conduct pixel-level operations such as drawing a line, box, circle, or executing graphics, among other things. HTML5 now includes support for canvas regions. An example code is shown below.
+
+<canvas id="myCanvas" width="200" height="100">
+	Fallback content, when canvas is not supported by the browser.
+</canvas> 
+
+17)Geolocation API:
+-------------------
+HTML5 provides an API for obtaining the user's location, enabling web applications to
+offer location-based services.
+
+18)Local storage:
+-----------------
+HTML5 introduced the localStorage API, which allows for the storage of data on the user's
+device, improving performance and reducing the need for round-trips to the server.
+
+19)New Structural Elements:
+---------------------------
+HTML5 introduced new semantic elements such as <header>, <footer>, <nav>, and
+<article> that make it easier to structure and organise content on a web page.
+
+20)Form Improvements:
+---------------------
+ HTML5 introduced several improvements to forms, including new input types like date,
+time, and colour, as well as new attributes such as required and autofocus. 
+
+Conclusion:
+-----------
+The features mentioned above are all of the new features added to the HTML5 version of the browser. It has breathed fresh life into the HTML programming language. The simplicity with which these capabilities have made it possible to construct a website is noteworthy. Besides these, several more new HTML5 capabilities have been released. 
+
+

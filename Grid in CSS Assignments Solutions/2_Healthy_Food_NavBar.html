@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food Navigation Bar</title>
+    <style>
+      /* Question 02 Styles Start */
+      nav {
+        width: 99%;
+        height: 40px;
+        margin: auto;
+        display: grid;
+        /* border: 1px dotted black; */
+        grid-template-columns: repeat(3, 1fr);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        margin-left: 5px;
+      }
+      .nav-logo img {
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 60px;
+      }
+      .nav-bar-links {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        left: 325px;
+      }
+      .nav-bar-links > a {
+        /* border: 1px solid black; */
+        margin: 0px 35px;
+        text-decoration: none;
+        color: #000000;
+      }
+      .nav-bar-links a:hover {
+        font-weight: bold;
+        color: #00ff00;
+      }
+      .nav-login-button button {
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 2.5px;
+        right: 0;
+        background-color: #1cdb65;
+        padding: 10px 60px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      /* Question 02 Styles Ends */
+
+      .hero-container {
+        width: 90%;
+        margin: auto;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        position: relative;
+      }
+      .text-section {
+        /* border: 1px dotted black; */
+        padding: 0px 50px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        color: #54707a;
+      }
+      .text-section button {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px 50px;
+        border: none;
+        margin-top: 20px;
+        font-size: 17px;
+      }
+      .image-section {
+        background-color: yellow;
+        /* border: 1px dotted black; */
+        height: 94%;
+        margin-top: 35px;
+      }
+      img {
+        width: 70%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 2. The landing page designed in question 01 showcases an impressive layout and design. However, it lacks a 
+            crucial component - a navigation bar. Without a navigation bar, users may find navigating through different 
+            sections of the website challenging. To address this issue, design a navigation bar using CSS Grid, as shown 
+            in the image below as of now there is no need to update the navigation links. Navigation Bars enhance user 
+            experience, improve usability, and ensure easy access to various pages and content. -->
+    <div class="hero-container">
+      <!-- Question 02 Navigation-Bar html -->
+      <nav>
+        <div class="nav-logo">
+          <img
+            src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+            alt="logo"
+          />
+        </div>
+        <div class="nav-bar-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="nav-login-button">
+          <button type="button">Login</button>
+        </div>
+      </nav>
+
+      <!-- Question 01 Healthy Food html -->
+      <section class="text-section">
+        <h1>Healthy Food</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
+          inventore aliquid officia, neque architecto nesciunt odio quo tempore
+          distinctio nisi error voluptatum fuga fugiat molestias delectus sint
+          omnis obcaecati eligendi autem soluta? Eaque, molestiae laboriosam
+          vitae recusandae assumenda deserunt dolor maxime perspiciatis laborum
+          nulla dignissimos incidunt, eius fuga nobis voluptatibus ipsam
+          sapiente voluptatum exercitationem, repellat in ratione hic minus
+          reprehenderit!
+        </p>
+        <button type="button">Read More</button>
+      </section>
+
+      <section class="image-section">
+        <img
+          src="https://media.istockphoto.com/id/1155240383/photo/table-filled-with-large-variety-of-food.jpg?s=612x612&w=0&k=20&c=Jg9AB2Pt6Kd48uC35ce9iOwYAITagq94Fpn1qU6fI7E="
+          alt="Healthy Food"
+        />
+      </section>
+    </div>
+  </body>
+</html>

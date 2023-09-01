@@ -1,0 +1,14 @@
+body {
+    background-color: darkslategray;
+}
+
+h1 {
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-size: large;
+    color: lightpink;
+}

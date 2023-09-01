@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food Footer Section</title>
+    <style>
+      /* Question 02 Styles Start */
+      nav {
+        width: 99%;
+        height: 40px;
+        margin: auto;
+        display: grid;
+        /* border: 1px dotted black; */
+        grid-template-columns: repeat(3, 1fr);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        margin-left: 5px;
+      }
+      .nav-logo img {
+        /* border: 1px solid black; */
+        position: absolute;
+        top: -7px;
+        left: -13px;
+        width: 65px;
+        height: 65px;
+      }
+      .nav-bar-links {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        left: 325px;
+      }
+      .nav-bar-links > a {
+        /* border: 1px solid black; */
+        margin: 0px 35px;
+        text-decoration: none;
+        color: #000000;
+      }
+      .nav-bar-links a:hover {
+        font-weight: bold;
+        color: #00ff00;
+      }
+      .nav-login-button button {
+        /* border: 1px solid black; */
+        position: absolute;
+        top: 2.5px;
+        right: 0;
+        background-color: #1cdb65;
+        padding: 10px 60px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      /* Question 02 Styles Ends */
+
+      .container {
+        width: 90%;
+        margin: auto;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+      }
+      .hero-container {
+        width: 100%;
+        margin: auto;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        align-items: center;
+        gap: 20px;
+        margin-top: 0px;
+      }
+      .text-section {
+        /* border: 1px dotted black; */
+        padding: 0px 50px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        color: #54707a;
+      }
+      .text-section button {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px 50px;
+        border: none;
+        margin-top: 20px;
+        font-size: 17px;
+      }
+      .image-section {
+        background-color: yellow;
+        /* border: 1px dotted black; */
+        height: 94%;
+        margin-top: 35px;
+      }
+      img {
+        width: 70%;
+        height: 100%;
+      }
+
+      /* Question 03 Styles start */
+      .Order_And_Delivery-section {
+        width: 100%;
+        margin: auto;
+        /* border: 1px dotted black; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background-color: #2b1d16;
+      }
+      .sub-section {
+        /* border: 1px solid black; */
+        margin: 10px 50px;
+        text-align: center;
+      }
+      .sub-section img {
+        width: 120px;
+      }
+      .sub-section h1 {
+        color: white;
+        font-size: 25px;
+      }
+      .sub-section p {
+        color: #8c6e54;
+        font-size: 15px;
+      }
+      .sub-section-heading {
+        margin-top: 60px;
+      }
+      /* Question 03 Styles Ends */
+
+      /* Question 04 Styles start */
+      .orderOnline-onsiteDining-NightLifeClubs-section {
+        width: 100%;
+        margin: auto;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 80px;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .orderOnline-onsiteDining-NightLifeClubs-section .sub-section {
+        /* border: 1px solid black; */
+        text-align: left;
+        width: 100%;
+        overflow: clip;
+        border-radius: 25px 25px 25px 25px;
+        margin: 0;
+        /* margin: 50px;
+            position: relative;
+            right: 50px; */
+      }
+      .orderOnline-onsiteDining-NightLifeClubs-section .sub-section img {
+        text-align: left;
+        width: 100%;
+        height: 300px;
+        margin-top: -50px;
+      }
+      .orderOnline-onsiteDining-NightLifeClubs-section .sub-section h1 {
+        color: #000000;
+        font-size: 25px;
+        margin: 0;
+      }
+      .orderOnline-onsiteDining-NightLifeClubs-section .sub-section p {
+        color: #54707a;
+        font-size: 15px;
+        margin: 8px;
+      }
+      .orderOnline-onsiteDining-NightLifeClubs-section .text-section {
+        border: 1px solid black;
+        border-radius: 0px 0px 25px 25px;
+        background-color: white;
+        position: relative;
+        top: -60px;
+      }
+      /* Question 04 Styles Ends */
+
+      /* Question 05 Styles start */
+      footer {
+        /* border: 1px solid black; */
+        background-color: #2e1f18;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        gap: 50px;
+      }
+      footer img {
+        /* border: 1px solid white; */
+        width: 350px;
+        text-align: center;
+        padding: 20px;
+      }
+      footer .text-section {
+        /* border: 1px solid white; */
+        padding: 0;
+        margin-left: -35px;
+      }
+      footer .text-section h1 {
+        color: white;
+        font-size: 30px;
+        text-align: start;
+        margin: 0;
+      }
+      footer .text-section a {
+        display: block;
+        color: #8c6e54;
+        text-decoration: none;
+        padding: 15px;
+        text-align: start;
+      }
+      footer .text-section a:hover {
+        font-size: large;
+        font-weight: bold;
+        color: #ff7700;
+      }
+      footer p {
+        /* border: 1px solid white; */
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      /* Question 05 Styles Ends */
+    </style>
+  </head>
+  <body>
+    <!-- 5. The footer is a vital component of a website, providing a finishing touch to the overall design and user 
+            experience. To enhance our website, let's build a simple footer that includes a logo, navigation links, and a 
+            copyright statement, as shown in the below image. By implementing this footer, we aim to improve 
+            navigation, brand recognition, and establish legal ownership, ensuring a professional and complete website 
+            presence.-->
+    <div class="container">
+      <!-- Question 02 Navigation-Bar html -->
+      <nav>
+        <div class="nav-logo">
+          <img src="./Healthy Food Logo.png" alt="logo" />
+        </div>
+        <div class="nav-bar-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-login-button">
+          <button type="button">Login</button>
+        </div>
+      </nav>
+
+      <!-- Question 01 Healthy Food html -->
+      <div class="hero-container">
+        <section class="text-section">
+          <h1>Healthy Food</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
+            inventore aliquid officia, neque architecto nesciunt odio quo
+            tempore distinctio nisi error voluptatum fuga fugiat molestias
+            delectus sint omnis obcaecati eligendi autem soluta? Eaque,
+            molestiae laboriosam vitae recusandae assumenda deserunt dolor
+            maxime perspiciatis laborum nulla dignissimos incidunt, eius fuga
+            nobis voluptatibus ipsam sapiente voluptatum exercitationem,
+            repellat in ratione hic minus reprehenderit!
+          </p>
+          <button type="button">Read More</button>
+        </section>
+
+        <section class="image-section">
+          <img
+            src="https://media.istockphoto.com/id/1155240383/photo/table-filled-with-large-variety-of-food.jpg?s=612x612&w=0&k=20&c=Jg9AB2Pt6Kd48uC35ce9iOwYAITagq94Fpn1qU6fI7E="
+            alt="Healthy Food"
+          />
+        </section>
+      </div>
+
+      <!-- Question 03 Order And Delivery html -->
+      <div class="Order_And_Delivery-section">
+        <div class="sub-section">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+            alt="sub-section img1"
+          />
+          <h1>No Minimum Order</h1>
+          <p>
+            Order in for yourself or for the group, with no restrictions on
+            order value
+          </p>
+        </div>
+
+        <div class="sub-section">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+            alt="sub-section img2"
+          />
+          <h1>Live Order Tracking</h1>
+          <p>
+            Know where your order is at all times, from the restaurant to your
+            doorstep
+          </p>
+        </div>
+
+        <div class="sub-section">
+          <img
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+            alt="sub-section img3"
+          />
+          <h1 class="sub-section-heading">Lightning-Fast Delivery</h1>
+          <p>
+            Experience Swiggy's superfast delivery for food delivered fresh & on
+            time
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 04 OrderOnline OnsiteDining NightLifeClubs html-->
+      <div class="orderOnline-onsiteDining-NightLifeClubs-section">
+        <div class="sub-section">
+          <img
+            src="https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886"
+            alt="sub-section img1"
+          />
+          <div class="text-section">
+            <h1>Order Online</h1>
+            <p>Stay Home and order to your Door Step</p>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            alt="sub-section img2"
+          />
+          <div class="text-section">
+            <h1>On-site Dining</h1>
+            <p>View the city's favourite dining venues</p>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <img
+            src="https://images.unsplash.com/photo-1581417478175-a9ef18f210c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmlnaHQlMjBjbHVifGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="sub-section img3"
+          />
+          <div class="text-section">
+            <h1>Nightlife & Clubs</h1>
+            <p>Explore the city's top nightlife outlets & Book tables</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 05 Footer html -->
+      <footer>
+        <img src="./Healthy Food Logo.png" alt="Footer-Logo" />
+
+        <div class="text-section">
+          <h1>Navigation Links</h1>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#login">Login</a>
+        </div>
+        <div class="text-section">
+          <h1>Learn More</h1>
+          <a href="#privacy">Privacy</a>
+          <a href="#security">Security</a>
+          <a href="#terms">Terms</a>
+          <a href="#sitmap">Sitemap</a>
+        </div>
+
+        <p>&#169; Copyright All rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

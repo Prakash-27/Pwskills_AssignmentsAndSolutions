@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Button Animations Commonly Used in Landing Page</title>
+    <style>
+      .button-container {
+        border: 2px solid brown;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        /* border: 3px solid tomato; */
+        border: none;
+        padding: 15px 40px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, #5073f1 50%, #3c33c2 100%);
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* Style Declaration */
+        /*Animation Shorthand Syntax*/
+        animation: jump 1s infinite alternate;
+        cursor: pointer;
+      }
+      a {
+        font-weight: bold;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Animation Sequence */
+      @keyframes jump {
+        from,
+        to {
+          transform: translateY(-25px);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+          transform: translateY(0);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 7. In this coding challenge, we will explore CSS button animations commonly used in product landing pages to 
+attract users' attention and encourage product registration. A good example can be found at https://
+codercommunity.io/ . Let's create a similar animated button in this assignment to capture the user's 
+attention on our landing page. -->
+    <div class="button-container">
+      <button>
+        <a href="https://pwskills.com/">Click Me To Visit PW Skills.</a>
+      </button>
+    </div>
+  </body>
+</html>

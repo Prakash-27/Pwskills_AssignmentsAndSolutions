@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Transform and Transition</title>
+    <style>
+      .image {
+        /* border: 2px solid black; */
+        width: 500px;
+        height: 400px;
+        margin: 120px auto;
+      }
+      img {
+        width: 100%;
+        border: 5px solid black;
+      }
+      img:hover {
+        scale: 1.5 1.5;
+        transition: 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 4. Let’s now try to implement the CSS transform and transition property. In this coding challenge, you are 
+expected to create a simple webpage with an image as shown in the reference image below. Note that 
+website responsiveness is optional. On hovering the image must be zoomed slowly. -->
+    <div class="image">
+      <img
+        src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/places-to-live-in-bangalore.jpg"
+        alt="image01"
+      />
+    </div>
+  </body>
+</html>

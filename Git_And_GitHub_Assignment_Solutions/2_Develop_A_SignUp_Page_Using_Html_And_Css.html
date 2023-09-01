@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Develop A SignUp Page Using Html And Css.</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        /* border: 3px solid tomato; */
+        border-radius: 5px;
+        width: 400px;
+        background-color: white;
+        padding: 20px;
+      }
+      .h1-sigup-text-container {
+        /* border: 2px solid black; */
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      h1 {
+        color: black;
+        font-size: 30px;
+      }
+      form {
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+      }
+      .form-section {
+        margin-bottom: 20px;
+      }
+      .form-section input {
+        width: 100%;
+        padding: 10px 0;
+        border-radius: 5px;
+      }
+      .form-section label {
+        /* border: 2px dotted; */
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-section select {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        border-radius: 5px;
+        outline: 0;
+      }
+      input,
+      label {
+        color: black;
+        font-size: 16px;
+        outline: 0;
+      }
+      .password {
+        margin-bottom: 35px;
+      }
+      .signupButton-container {
+        /* border: 2px solid mediumspringgreen; */
+        text-align: center;
+        margin-bottom: 0px;
+      }
+      .signupButton-container a {
+        display: block;
+        border: 2px solid black;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px 0;
+      }
+      .signupButton-container a:hover {
+        color: black;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 2. Design and develop a SignUp page using HTML and CSS. The login page should have a visually appealing 
+layout as shown in the below image -->
+    <div class="container">
+      <div class="h1-sigup-text-container">
+        <h1>Signup</h1>
+      </div>
+      <form>
+        <div class="form-section name">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required="required" />
+        </div>
+
+        <div class="form-section batch">
+          <label for="batch">Batch:</label>
+          <select name="batch" id="batch" required="required">
+            <option value="sigma1">Sigma 1.0</option>
+            <option value="sigma2">Sigma 2.0</option>
+          </select>
+        </div>
+
+        <div class="form-section age">
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" required="required" />
+        </div>
+
+        <div class="form-section email">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required="required" />
+        </div>
+
+        <div class="form-section password">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required="required"
+          />
+        </div>
+
+        <div class="form-section signupButton-container">
+          <a href="#">Signup</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

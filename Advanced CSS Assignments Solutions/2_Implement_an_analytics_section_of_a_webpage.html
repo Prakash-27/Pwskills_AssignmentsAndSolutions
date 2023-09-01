@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implement an analytics section of a webpage.</title>
+    <style>
+      body {
+        border: 2px solid black;
+        height: 100vh;
+        display: flex;
+      }
+      .gradient-container {
+        /* border: 2px solid black; */
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(to right, #d286e6 20%, #933bd3 100%);
+        border-radius: 20px;
+        padding: 20px;
+      }
+      section {
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 2. Color gradients are often used for primary containers in webpages, such as the background of some 
+sections. In this coding challenge let’s try to implement an analytics section of a webpage as shown in the 
+below image. -->
+    <div class="gradient-container">
+      <section>
+        <h1>15+</h1>
+        <p>Years Experience</p>
+      </section>
+      <section>
+        <h1>24.5 T+</h1>
+        <p>Invested on Coinyx</p>
+      </section>
+      <section>
+        <h1>115+</h1>
+        <p>Professional Team</p>
+      </section>
+      <section>
+        <h1>262+</h1>
+        <p>Total Global Node</p>
+      </section>
+    </div>
+  </body>
+</html>

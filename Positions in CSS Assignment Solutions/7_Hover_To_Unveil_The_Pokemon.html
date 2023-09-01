@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover To Unveil The Pokemon</title>
+    <style>
+      body {
+        position: relative;
+        text-align: center;
+      }
+      img {
+        width: 150px;
+        height: 200px;
+        background-color: #1b1a1a;
+      }
+      .card {
+        position: absolute;
+        background-color: #a9a9a9;
+        width: 200px;
+        height: 300px;
+        border: 1px solid #1d1c1c;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .card-one {
+        background-color: #1e90ff;
+      }
+      .card-two {
+        background-color: #05ac05;
+        margin-top: 60px;
+        margin-left: 40px;
+      }
+      .card-three {
+        background-color: #ffc531;
+        margin-top: 120px;
+        margin-left: 70px;
+      }
+      .card:hover {
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 7.  Create a simple Pokemon game as shown in the image below:
+             Initially, the webpage must display some hidden cards with a Pokemon image on them.
+             On hovering a card, that particular card must be displayed on the top so that the Pokemon image is visible.
+             Use z-index to achieve this output. -->
+    <h1>Hover To Unveil The Pokemon</h1>
+    <div class="card card-one">
+      <h3>Card 1</h3>
+      <img src="./Pikachu.png" alt="pikachu image" />
+    </div>
+
+    <div class="card card-two">
+      <h3>Card 2</h3>
+      <img src="./Charizad.png" alt="charizad image" />
+    </div>
+
+    <div class="card card-three">
+      <h3>Card 3</h3>
+      <img src="./Totodile.png" alt="totodile image" />
+    </div>
+  </body>
+</html>

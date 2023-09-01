@@ -1,0 +1,11 @@
+2.  What are HTML Entities? List out 5 commonly used HTML entities ?
+
+HTML character entities are used as a replacement of reserved characters in HTML. You can also replace characters that are not present on your keyboard by entities.
+
+These characters are replaced because some characters are reserved in HTML. HTML entities provide a wide range of characters which can allow you to add icons, geometric shapes, mathematical operators, etc.
+
+1. <	less than	            &lt;	&#60
+2. >	greater than	        &gt;	&#62
+3. &	ampersand	            &amp;	&#38
+4. ©	copyright	            &copy;	&#169
+5. ®	registered trademark	&reg;	&#174

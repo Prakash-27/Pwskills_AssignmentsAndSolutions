@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and Odd Number items different Back Ground color</title>
+    <style>
+        li {
+            font-weight: bold;
+        }
+
+        /* This 1 Method */
+        /* .even {
+            background-color: #ff0000;
+        }
+
+        .odd {
+            background-color: #0000ff;
+        } */
+
+        /* This 2nd Method */
+        li:nth-child(odd) {
+            background-color: #ffa500;
+        }
+
+        li:nth-child(even) {
+            background-color: #7fff00;
+        }
+    </style>
+</head>
+<body>
+    <!-- 4. Create a web page with a list of tech stacks involved in full-stack web development where the even numbered items have a different background color than the odd-numbered items -->
+    <h1>
+        <u>List of Tech Stack Involved in Full Stack Web Development:</u>
+    </h1>
+    <ol>
+        <li class="odd">HTML</li>
+        <li class="even">CSS</li>
+        <li class="odd">JavaScript</li>
+        <li class="even">My SQL</li>
+        <li class="odd">MongoDB</li>
+        <li class="even">React JS</li>
+        <li class="odd">Node JS</li>
+    </ol>
+
+
+</body>
+</html>

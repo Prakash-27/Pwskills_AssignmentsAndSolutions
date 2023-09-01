@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a simple webpage with multiple columns</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #1f2020;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .heading {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fa6b5b;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        width: 800px;
+        height: 500px;
+        margin: auto;
+      }
+      .column-1 {
+        width: 100%;
+        height: 100%;
+        background-color: #12c5c5;
+      }
+      .column-2 {
+        width: 100%;
+        height: 100%;
+        background-color: #e43da7;
+      }
+      .column-3 {
+        width: 100%;
+        height: 100%;
+        background-color: #7434db;
+      }
+      img {
+        width: 70px;
+        border-radius: 50%;
+      }
+      .title {
+        text-align: center;
+      }
+      .image {
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        background-color: #fff;
+        margin: auto;
+        border-radius: 50%;
+        padding: 10px;
+      }
+      p {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 5. Create a simple webpage with multiple columns as shown in below image:
+             i)Make sure all columns have equal heights, regardless of their content. -->
+    <h1 class="heading">Full Stack Web Development</h1>
+    <div class="container">
+      <div class="column-1">
+        <h2 class="title">HTML</h2>
+        <div class="image">
+          <img src="./html.png" alt="HTML" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          ipsum quaerat eos adipisci sequi suscipit cumque recusandae officia
+          perspiciatis tempore ut culpa, dignissimos itaque repudiandae quasi,
+          quis qui quos earum sunt natus aperiam nemo labore? Dolorum facere
+          iste culpa. Impedit minima dolor facilis corporis illum rerum
+          laudantium, maxime neque?
+        </p>
+      </div>
+
+      <div class="column-2">
+        <h2 class="title">CSS</h2>
+        <div class="image">
+          <img src="./css.png" alt="CSS" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          ipsum quaerat eos adipisci sequi suscipit cumque recusandae officia
+          perspiciatis tempore ut culpa, dignissimos itaque repudiandae quasi,
+          quis qui quos earum sunt natus aperiam nemo labore? Dolorum facere
+          iste culpa. Impedit minima dolor facilis corporis illum rerum
+          laudantium, maxime neque?
+        </p>
+      </div>
+
+      <div class="column-3">
+        <h2 class="title">JavaScript</h2>
+        <div class="image">
+          <img src="./js.png" alt="JAVASCRIPT" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          ipsum quaerat eos adipisci sequi suscipit cumque recusandae officia
+          perspiciatis tempore ut culpa, dignissimos itaque repudiandae quasi,
+          quis qui quos earum sunt natus aperiam nemo labore? Dolorum facere
+          iste culpa. Impedit minima dolor facilis corporis illum rerum
+          laudantium, maxime neque?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

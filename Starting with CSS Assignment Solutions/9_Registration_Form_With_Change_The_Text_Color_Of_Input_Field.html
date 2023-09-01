@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the text Color of input Field.</title>
+    <style>
+        input:focus {
+        background-color: #000000;
+       }
+
+        input[type="text"]:focus {
+            color: #00ffff;
+        }
+
+        input[type="email"] {
+            color: #ff4040;
+        }
+
+        input[type="password"] {
+            color: #5eff5e;
+        }
+
+        label {
+         font-size: medium;
+         font-style: italic;
+         font-weight: bold;
+         text-decoration: underline;
+       }
+
+       input[type="button"]:focus {
+        font-size: medium;
+        font-style: italic;
+        color: #ff0000;
+        background-color: #ffff00;
+       }
+
+       body {
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <!-- 9.  Create a web page with a registration form, using the CSS attribute selector change the text color of each 
+    input field to any other color. -->
+    <h1>Registration Form</h1>
+    <form action="/Register.js">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <br />
+        <input type="button" value="Register" required />
+    </form>
+</body>
+</html>

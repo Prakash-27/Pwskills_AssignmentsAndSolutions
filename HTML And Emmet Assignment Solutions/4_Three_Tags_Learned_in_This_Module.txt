@@ -1,0 +1,27 @@
+4. List out any 3 tags we learned in this module and give a brief explanation about the tags ?
+
+<table></table> : 
+-----------------
+An HTML table is created with an opening <table> tag and a closing </table> tag. Inside these tags, data is organized into rows and columns by using opening and closing table row <tr> tags and opening and closing table data <td> tags,Table row <tr> tags are used to create a row of data. Inside opening and closing table <tr> tags, opening and closing table data <td> tags are used to organize data in columns.
+
+<a></a> : 
+---------
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+By default, links will appear as follows in all browsers:
+
+i)An unvisited link is underlined and blue
+ii)A visited link is underlined and purple
+iii)An active link is underlined and red
+
+<div></div> : 
+-------------
+The div tag is known as Division tag. The div tag is used in HTML to make divisions of content in the web page like (text, images, header, footer, navigation bar, etc). Div tag has both open (<div>) and closing (</div>) tag and it is mandatory to close the tag. The Div is the most usable tag in web development because it helps us to separate out data in the web page and we can create a particular section for particular data or function in the web pages.
+
+Div tag is Block level tag
+It is a generic container tag
+It is used to group various tags of HTML so that sections can be created and styles can be applied to them.
+
+As we know Div tag is block-level tag, the div tag contains entire width. Hence, every div tag will start from a new line, and not the same line.

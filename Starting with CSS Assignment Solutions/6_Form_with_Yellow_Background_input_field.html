@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with Yellow Back Ground Input Field.</title>
+    <style>
+       input:focus {
+        background-color: yellow;
+       }
+
+       label {
+         font-size: medium;
+         font-style: italic;
+         font-weight: bold;
+         text-decoration: underline;
+       }
+
+       input[type="button"]:focus {
+        font-size: medium;
+        font-style: italic;
+        color: red;
+       }
+
+       body {
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <!-- 6. Create a web page with a form where the input field has a yellow background color when it is focused on. -->
+    <h1>FeedBack Form</h1>
+    <form action="/Register.js">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <br />
+        <input type="button" value="Submit Feedback" required />
+    </form>
+</body>
+</html>

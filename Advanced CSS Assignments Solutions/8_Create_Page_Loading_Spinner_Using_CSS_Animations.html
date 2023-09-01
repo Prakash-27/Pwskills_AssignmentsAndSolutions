@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Page Loading Spinner Using CSS Animations</title>
+    <style>
+        .loading-Spinner-container{
+            border: 2px solid brown;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading-Spinner{
+            border: 5px solid #e7dfdf;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-left: 5px solid #171b1d;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* Style Declaration */ 
+            /*Animation Shorthand Syntax*/ animation: spinLoader 2s linear 0s infinite forwards running;
+        }
+
+        /* Animation Sequence */
+        @keyframes spinLoader {
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 8.  In this coding challenge, we will explore CSS animations, focusing on the commonly used loading spinner. 
+Your task is to implement a page-loading spinner, similar to the one shown in the below image. -->
+    <div class="loading-Spinner-container">
+        <div class="loading-Spinner"></div>
+    </div>
+</body>
+</html>

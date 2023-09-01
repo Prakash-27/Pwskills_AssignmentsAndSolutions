@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover To Have A GrayScale Look</title>
+    <style>
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 50px;
+      }
+      .image {
+        /* border: 2px solid black; */
+        width: 1000px;
+        height: 500px;
+        display: flex;
+        margin: 0px auto;
+      }
+      img {
+        width: 100%;
+        /* border: 5px solid black; */
+        border-radius: 25px;
+        filter: grayscale(0);
+      }
+      img:hover {
+        filter: grayscale(1);
+        transition: 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 6. The grayscale look is important as it can evoke a sense of nostalgia or create a timeless aesthetic in web 
+design. In this coding challenge let’s try to implement the grayscale filter. The task is to apply a grayscale 
+filter to a colorful image on hover. -->
+    <h1>Hover To Have A GrayScale Look.</h1>
+    <div class="image">
+      <img
+        src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/01/22185942/Bill-Gates.jpg"
+        alt="Bill Gates"
+      />
+    </div>
+  </body>
+</html>

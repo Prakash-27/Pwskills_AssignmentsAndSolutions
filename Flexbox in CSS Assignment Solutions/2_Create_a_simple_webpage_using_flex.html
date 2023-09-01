@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a simple webpage using flex</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,500&family=Oswald:wght@500&family=Poppins&family=Shantell+Sans:wght@300&display=swap");
+      body {
+        background-color: #c8dcf1;
+      }
+      .heading-part > h1 {
+        text-align: center;
+        color: #5a4bda;
+        margin: 0px;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+      }
+      .heading-part > p {
+        text-align: center;
+        color: #575757;
+        margin: 0px;
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 7%;
+        margin-top: 100px;
+        gap: 15px;
+      }
+      .card-1 {
+        background-color: #f0f8ff;
+        /* margin: 0 10px; */
+        padding: 10px;
+        width: 300px;
+        height: 350px;
+        /* max-width: 300px; */
+        border: none;
+        border-radius: 10px;
+      }
+      .card-2 {
+        background-color: #f0f8ff;
+        /* margin: 0 10px; */
+        padding: 10px;
+        width: 300px;
+        height: 350px;
+        border: none;
+        border-radius: 10px;
+      }
+      .card-3 {
+        background-color: #f0f8ff;
+        /* margin: 0 10px; */
+        padding: 10px;
+        width: 300px;
+        height: 350px;
+        border: none;
+        border-radius: 10px;
+      }
+      img {
+        width: 100%;
+      }
+      .title {
+        color: #5a4bda;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      .instructor {
+        font-weight: lighter;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        margin-top: 0px;
+      }
+      .price {
+        font-weight: bolder;
+        font-family: "Poppins", sans-serif;
+        margin-top: 0px;
+      }
+      /* .card{
+            background-color: #fff;
+            max-width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- 2. Create a simple webpage as shown in the image below:
+              i)The webpage must contain course details.
+              ii)The cards must be aligned side by side. If any new card gets added, the size of the cards must not be varied 
+                 and the flow must be moved to the next row automatically. -->
+    <div class="heading-part">
+      <h1>Community Programs</h1>
+      <p>Open to all pro-live classes on youtube for free.</p>
+    </div>
+    <div class="container">
+      <section class="card-1">
+        <img
+          src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.png"
+          alt="Course01"
+        />
+        <h3 class="title">
+          Masterclass Understanding APIs in Web Development with RoadMap
+        </h3>
+        <p class="instructor">Hitesh Choudhary</p>
+        <h3 class="price">FREE</h3>
+      </section>
+
+      <section class="card-2">
+        <img
+          src="https://cdn.pwskills.com/assets/uploads/thumbnails/6463025b6977cc64d3ddf8b7.png"
+          alt="Course02"
+        />
+        <h3 class="title">
+          Masterclass Cracking The Coding Interview LinkedList
+        </h3>
+        <p class="instructor">Vishwa Mohan</p>
+        <h3 class="price">FREE</h3>
+      </section>
+
+      <section class="card-3">
+        <img
+          src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.png"
+          alt="Course03"
+        />
+        <h3 class="title">
+          Masterclass Important of DSA in Modern Programming
+        </h3>
+        <p class="instructor">Priya Bhatia</p>
+        <h3 class="price">FREE</h3>
+      </section>
+    </div>
+    <!-- <section class="card">
+        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.png" alt="Course03" />
+        <h3 class="title">Masterclass Important of DSA in Modern Programming</h3>
+        <p class="instructor">Priya Bhatia</p>
+        <h3 class="price">FREE</h3>
+    </section> -->
+  </body>
+</html>

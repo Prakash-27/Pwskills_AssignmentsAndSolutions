@@ -1,0 +1,13 @@
+10. What are global attributes? List any 5 global attributes ?
+
+HTML global attributes refer to the attribute common to all HTML elements although they may have no effect on some elements. Global attributes specified on both standard and non-standard elements.
+
+List 5 global Attributes:
+-------------------------
+i)class - It specifies one or more class names for an HTML element.
+ii)id - It is a unique identifier that is used to specify the document and used by CSS and JavaScript to perform a certain task for a unique element.
+iii)style - Style in HTML are basically rules that describe how a document will be presented in a browser.
+iv)title - It is used to define the title of an HTML document, sets the title in the browser toolbar, and provides the title for the web page when it is added to favorites.
+v)dir - It is used to specify the text direction of the element content.	
+Try
+vi)data-* - It can be used to define our own custom data attributes.

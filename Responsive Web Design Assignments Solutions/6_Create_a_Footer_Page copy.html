@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Footer Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            /* margin-top: auto; */
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        footer {
+            background-color: #110d0d;
+            width: 100%;
+            padding: 40px 0px;
+            /* box-sizing: border-box; */
+        }
+        .footer-container{
+            /* border: 2px solid brown; */
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: stretch;
+            padding: 2em 1em;
+        }
+        .oneCard-section{
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 200px;
+        }
+        h3{
+            color: white;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #a7a7a7;
+            font-size: 16px;
+            line-height: 30px;
+            word-spacing: 2px;
+        }
+        .navigation-section{
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            height: 210px;
+        }
+        ul {
+            list-style: none;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+        li a{
+            line-height: 48px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #a7a7a7;
+        }
+        li a:hover{
+            color: #2395ff;
+        }
+        .support-section{
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            height: 210px;
+        }
+        .newsletter-section{
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            gap: 5px;
+        }
+        input{
+            padding: 18px;
+            border-radius: 5px;
+            border: 0;
+            outline: 0;
+        }
+        input[type=button]{
+            background-color: #2395ff;
+            color: white;
+        }
+        @media screen and (width<=576px) {
+            .footer-container{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                padding-left: 50px;
+            }
+            .oneCard-section{
+                height: 140px;
+            }
+            .newsletter-section input{
+                width: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 6.  You have reached the final task of learning responsive web design, which involves designing a responsive 
+footer. Your goal is to build a simple webpage footer that matches the design shown in the attached image. 
+The footer should adapt to different screen sizes, ensuring optimal visibility and alignment of the content. 
+Refer to the attached image for a visual reference. -->
+    <footer>
+        <div class="footer-container">
+            <section class="oneCard-section">
+                <h3>One Card</h3>
+                <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+            </section>
+            <section class="navigation-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Offers</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="support-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                    <li><a href="#">Terms Of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </section>
+            <section class="newsletter-section">
+                <h3>Newsletter</h3>
+                <input type="email" name="email" id="email" placeholder="Your email id here" />
+                <input type="button" value="Subscribe" />
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

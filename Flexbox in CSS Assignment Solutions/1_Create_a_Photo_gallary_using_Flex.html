@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a photo gallery Using Flex</title>
+    <style>
+      .cards > img {
+        width: 200px;
+        height: 200px;
+        border: 3px solid black;
+        margin: 10px;
+        /* max-width: 200px;
+            max-height: 200px; */
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create a photo gallery as shown in the below image:
+          i)Use CSS flex to align the images side by side
+          ii)Using CSS flexbox properties, ensure that even if new images are added, the website flow is not broken. -->
+    <div class="cards">
+      <img
+        src="https://fastly.picsum.photos/id/660/2508/1672.jpg?hmac=D_MkrRyzUZRYLOGoa4HJ1WJTfnzN0qshbCEPpaCoSuI"
+        alt="photo-1"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1084/4579/3271.jpg?hmac=YblMazviSugJVfZsFPaFI_Vp6lBeQin62qpm8rxHruo"
+        alt="photo-2"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/631/2513/1670.jpg?hmac=jmwYWWSsJUOSsgEpMtzw8U7lOQ_CNoZJgwh4OGIs804"
+        alt="photo-3"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1047/3264/2448.jpg?hmac=ksy0K4uGgm79hAV7-KvsfHY2ZuPA0Oq1Kii9hqkOCfU"
+        alt="photo-4"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1041/5000/2813.jpg?hmac=_1GvdWBdZslF8U90TtMNR2xq6BlK9H1Jzut5sUi01Wc"
+        alt="photo-5"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1035/5000/3334.jpg?hmac=GsWxf2Tp2rjbNm5UPqRvn4Y1TzIgKen930dG6vhH8lw"
+        alt="photo-6"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1021/2048/1206.jpg?hmac=fqT2NWHx783Pily1V_39ug_GFH1A4GlbmOMu8NWB3Ts"
+        alt="photo-7"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1022/5000/2813.jpg?hmac=ntmA52ZVulTcB4Mn4Jg0UdMbni1WGiJ7YYTfmmgIeuU"
+        alt="photo-8"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1039/5000/3337.jpg?hmac=I1VD9wYOXbow6JODDCygKF4DXd5-Zgl1UONXlOjFkN8"
+        alt="photo-9"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1040/4496/3000.jpg?hmac=kvZONlBpTcZ16PuE_g2RWxlicQ5JKVq2lqqZndfafBY"
+        alt="photo-10"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/944/5000/3333.jpg?hmac=RjUGtspNgJoqMMLVyXdnzJ0k3d1LJ_rSBZtyXwzeqxY"
+        alt="photo-11"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/870/2900/4334.jpg?hmac=U4YRgynZq8pmDamJB_fy0YIi9hprnKnltK_bK0l0I54"
+        alt="photo-12"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/1080/5000/3335.jpg?hmac=f3IGc_xKMhNBScyKii5v-BBFTRReM46kzAkt2PijkqM"
+        alt="photo-13"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/823/5000/3333.jpg?hmac=75sjFAfvXxelfFDFdlupCl2KDgIbyOOBTmvhcr6u0B8"
+        alt="photo-14"
+      />
+      <img
+        src="https://fastly.picsum.photos/id/692/3888/2592.jpg?hmac=zl4L0X3Ht-Qao8Z_at8sHFcUOGrdIftp4A7UNhDuxJk"
+        alt="photo-15"
+      />
+    </div>
+  </body>
+</html>

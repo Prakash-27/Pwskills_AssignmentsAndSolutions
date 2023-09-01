@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Color Picker Using CSS Grid</title>
+    <style>
+      body {
+        background-color: sienna;
+      }
+      .container {
+        /* border: 3px solid white; */
+        border-radius: 10px;
+        background-color: #1f2122;
+        margin: 30px 30px;
+        padding: 20px 0px;
+      }
+      h1 {
+        color: #cad5e2;
+        font-size: xxx-large;
+        margin: 0px 5px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .color-picker-container {
+        /* border: 1px solid white; */
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+        margin: 20px 50px;
+      }
+      .color-picker {
+        /* border: 1px solid white; */
+        border-radius: 20px;
+        padding: 200px 0px;
+      }
+      p {
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .color-picker1 {
+        background-color: #8d3daf;
+      }
+      .color-picker2 {
+        background-color: #e07c24;
+      }
+      .color-picker3 {
+        background-color: #758283;
+      }
+      .color-picker4 {
+        background-color: #e03b8b;
+      }
+      .color-picker5 {
+        background-color: #ff6666;
+      }
+      .color-picker6 {
+        background-color: #03c6c7;
+      }
+      .color-picker7 {
+        background-color: #cad5e2;
+      }
+      .color-picker8 {
+        background-color: #35bdd0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 8. Create a simple color picker using CSS Grid to enable users to select colors efficiently. The objective is to 
+            design a visually appealing interface that allows users to choose colors and obtain their corresponding 
+            color codes. By leveraging CSS Grid, ensure a user-friendly layout that simplifies the color selection process. 
+            Let's build a color picker similar to the one shown in the below image. -->
+    <section class="container">
+      <h1>Feeling Fancy</h1>
+      <div class="color-picker-container">
+        <div class="color-picker color-picker1">
+          <p>#8D3DAF</p>
+        </div>
+        <div class="color-picker color-picker2">
+          <p>#E07C24</p>
+        </div>
+        <div class="color-picker color-picker3">
+          <p>#758283</p>
+        </div>
+        <div class="color-picker color-picker4">
+          <p>#E03B8B</p>
+        </div>
+        <div class="color-picker color-picker5">
+          <p>#FF6666</p>
+        </div>
+        <div class="color-picker color-picker6">
+          <p>#03C6C7</p>
+        </div>
+        <div class="color-picker color-picker7">
+          <p>#CAD5E2</p>
+        </div>
+        <div class="color-picker color-picker8">
+          <p>#35BDD0</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
