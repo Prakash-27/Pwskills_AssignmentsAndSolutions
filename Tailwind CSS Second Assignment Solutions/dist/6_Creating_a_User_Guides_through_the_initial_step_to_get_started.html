@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a User Guides through the initial step to get started</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 1. Let’s say we need to design a website for a stock market broker website. You are tasked with 
+creating a landing page for a stock market broker website. Your team lead has assigned you the 
+initial responsibility of designing a straightforward navigation bar. Note that there should be no 
+custom CSS and the output must be achieved only using Tailwind CSS.-->
+
+<!-- Main container Starts -->
+    <header class="h-auto md:h-[100%]">
+        <!-- Navigation Bar Starts -->
+        <nav class="bg-[#212224] flex justify-between items-center py-3">
+            <div class="nav-img flex">
+                <img class="w-36 mx-5" src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg" alt="Logo">
+            </div>
+    
+            <div class="nav-items flex justify-between items-center">
+                <button class="text-white bg-[#fc5b3f] px-5 py-3 mx-3 text-sm rounded-md font-bold hover:scale-105 focus:scale-95 hidden md:block">
+                    CREATE ACCOUNT
+                </button>
+                
+                <div class="hidden md:block">
+                    <div class="h-14 w-14 mx-5 bg-white hover:bg-[#fc5b3f] rounded-full flex justify-center items-center">
+                        <img class="h-12 w-12 rounded-full hidden md:block hover:scale-95 cursor-pointer" src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" alt="nav-avatar">
+                    </div>
+                </div>
+    
+                <div class="mx-5 md:hidden text-3xl text-white cursor-pointer hover:text-[#fc5b3f] hover:scale-95">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Bar Ends -->
+    </header>
+<!-- Main Container Ends -->
+
+<!-- 2. Building upon the previous assignment,  you now have to create a hero section for the landing 
+page. This section should be eye-catching and grab the visitors' attention. Take a look at the image 
+below for reference. -->
+
+<!-- Main container Starts -->
+    <section class="w-full h-auto bg-[#212224] flex flex-wrap justify-between items-center px-2 md:px-20 md:py-16">
+        <!-- Hero Section Starts -->
+        <div class="w-[100%] md:w-[50%] py-5">
+            <h1 class="text-white font-semibold text-5xl md:text-7xl py-3">
+                Multi-regulated global broker.
+            </h1>
+    
+            <p class="text-gray-400 text-base md:text-2xl py-5" style="text-wrap: balance;">
+                A trusted destination for traders worldwide, Authorised by FCA, ASIC & FSCA
+            </p>
+    
+            <Button class="w-[100%] md:w-[40%] text-white font-semibold border-2 border-[#fc5b3f] rounded-md py-3 px-3 mt-5 focus:scale-95 md:hover:scale-105 md:focus:scale-95 focus:bg-[#fc5b3f] focus:border-white">
+                DISCOVER ACCOUNTS
+            </Button>
+        </div>
+    
+        <div class="w-[100%] md:w-[50%] px-5 py-5 pt-5">
+            <img class="w-[100%] md:w-[100%]" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-slide-2.svg" alt="Hero Image">
+        </div>
+        <!-- Hero Section Ends -->
+    </section>
+<!-- Main container Ends -->
+
+<!-- 3. In continuation of our previous task, where we successfully created a hero section for a landing 
+page designed for a stock market broker, it is now time to showcase some statistical information. 
+Below are the reference images for your convenience. -->
+
+<!-- Main container starts -->
+    <section class="w-[100%] bg-[#212224] flex flex-col gap-2 md:flex-row md:justify-around py-5">
+        <!-- Companies Statistical Information container starts -->
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-1.svg" alt="Alphabet Image">
+
+            <div class="bg-green-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-up" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-2.svg" alt="Microsoft Image">
+
+            <div class="bg-green-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-up" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-3.svg" alt="Facebook Image">
+
+            <div class="bg-red-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-down" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-4.svg" alt="Amazon Image">
+
+            <div class="bg-green-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-up" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-5.svg" alt="Tesla Image">
+
+            <div class="bg-red-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-down" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+        <!-- Companies Statistical Information container ends -->
+    </section>
+<!-- Main container ends --> 
+
+<!-- 4. Building upon the previous task, it is crucial to incorporate informative blogs into a stock market 
+webpage. For this assignment, we will focus on adding blog cards to enhance the content. Below are 
+the reference images for your convenience. -->
+    
+<!-- Main container starts -->
+    <section class="w-[100%] h-auto bg-[#101112] p-3 md:p-10">
+        <!-- Blog cards container starts -->
+        <div class="text-white flex justify-between items-center p-3 md:py-8">
+            <h1 class="text-lg md:text-4xl font-semibold">Save time. Get 
+                <span class="text-[#fc5b3f]">higher return.</span> 
+                <br>Multiply wealth.
+            </h1>
+
+            <button class="border-2 rounded-md p-3 md:px-6 md:my-4 text-xs md:text-sm font-semibold border-[#fc5b3f] focus:scale-95 md:hover:scale-105 md:focus:scale-95 focus:bg-[#fc5b3f] focus:border-white">FIND OUT MORE ></button>
+        </div>
+
+        <div class="text-white md:p-8 flex flex-col md:flex-row gap md:gap-10">
+            <div class="bg-[#212224] md:w-[50%] pb-[430px] relative overflow-hidden rounded-lg my-3">
+                <img class="w-[100%] absolute right-0 top-0 -mr-16 -mt-16" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-object-1.svg" alt="Sample Image 01">
+
+                <div class="absolute bottom-0 p-5 px-10">
+                    <h1 class="text-2xl md:text-4xl font-semibold my-5">Various assets</h1>
+
+                    <p class="text-base md:text-xl text-gray-400">
+                       Duis aute irure dolor in reprehen derit in voluptate velit esse
+                       cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-[#212224] md:w-[50%] pb-[430px] relative overflow-hidden rounded-lg my-3">
+                <img class="w-[100%] absolute right-0 top-0 -mr-16 -mt-16" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-object-2.svg" alt="Sample Image 02">
+
+                <div class="absolute bottom-0 p-5 px-10">
+                    <h1 class="text-2xl md:text-4xl font-semibold my-5">Market analysis</h1>
+
+                    <p class="text-base md:text-xl text-gray-400">
+                        Duis aute irure dolor in reprehen derit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                     </p>
+                </div>
+            </div>
+
+            <div class="bg-[#212224] md:w-[50%] pb-[430px] relative overflow-hidden rounded-lg my-3">
+                <img class="w-[100%] absolute right-0 top-0 -mr-16 -mt-16" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-object-3.svg" alt="Sample Image 03">
+
+                <div class="absolute bottom-0 p-5 px-10">
+                    <h1 class="text-2xl md:text-4xl font-semibold my-5">Enhanced tools</h1>
+
+                    <p class="text-base md:text-xl text-gray-400">
+                        Duis aute irure dolor in reprehen derit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                     </p>
+                </div>
+            </div>
+        </div>
+        <!-- Blog cards container ends -->
+    </section>
+<!-- Main container ends -->
+
+<!-- 5. Let's continue working on the previous assignment. This time, we will focus on designing a section that 
+highlights the different features offered. Below are some reference images to guide us. -->
+
+<!-- Main container starts -->
+    <section class="w-[100%] h-auto p-3 md:p-10">
+       <!-- Features container starts -->
+       <div class="flex flex-col md:flex-row gap-10 md:gap-16 md:mb-12">
+         <div class="flex gap-5 mt-5 md:mb-5">
+             <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-1.svg" alt="Section Logo">
+     
+             <div>
+                <h1 class="font-semibold text-xl md:text-3xl">Expert service</h1>
+     
+                 <p class="text-base md:text-xl py-3 text-gray-500">
+                    Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam 
+                    nihil molestiae consequatur.
+                 </p>
+                 
+                 <button class="text-xs md:text-lg text-gray-400">LEARN MORE --></button>
+             </div>
+         </div>
+     
+         <div class="flex gap-5 mb-5 md:mt-5">
+             <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-2.svg" alt="Section Logo">
+     
+             <div>
+                 <h1 class="font-semibold text-xl md:text-3xl">Fully regulated</h1>
+     
+                 <p class="text-base md:text-xl py-3 text-gray-500">
+                    Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam 
+                    nihil molestiae consequatur.
+                 </p>
+     
+                 <button class="text-xs md:text-lg text-gray-400">LEARN MORE --></button>
+             </div>
+         </div>
+       </div>
+       
+       <div class="flex flex-col md:flex-row gap-10 md:gap-16 md:mt-16">
+         <div class="flex gap-5 mt-5 md:mb-5">
+             <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-3.svg" alt="Section Logo">
+    
+             <div>
+                 <h1 class="font-semibold text-xl md:text-3xl">Financial strength</h1>
+    
+                 <p class="text-base md:text-xl py-3 text-gray-500">
+                    Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam 
+                    nihil molestiae consequatur.
+                 </p>
+    
+                 <button class="text-xs md:text-lg text-gray-400">LEARN MORE --></button>
+             </div>
+         </div>
+    
+         <div class="flex gap-5 mb-5 md:mt-5">
+             <img class="w-20 h-20" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-4.svg" alt="Section Logo">
+    
+             <div>
+                 <h1 class="font-semibold text-xl md:text-3xl">Integrated support</h1>
+    
+                 <p class="text-base md:text-xl py-3 text-gray-500">
+                    Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam 
+                    nihil molestiae consequatur.
+                 </p>
+    
+                 <button class="text-xs md:text-lg text-gray-400">LEARN MORE --></button>
+             </div>
+         </div>
+       </div>
+       <!-- Features container ends -->
+    </section>
+<!-- Main container ends -->
+
+<!-- 6. Building upon the previous assignment, we will now tackle a coding challenge to design a section that 
+guides users through the initial steps to get started.  Below are some reference images to guide us. -->
+
+<!-- Main container starts -->
+    <section class="border-2 border-[#fc5b3f] mx-4 md:mx-16 mb-16 rounded-lg">
+        <!-- User Guides to Get started content starts -->
+        <div class="flex justify-center">
+            <h1 class="text-xl md:text-2xl text-[#fc5b3f] font-bold relative -top-5 px-3 md:px-5 bg-white">Simple steps to start trade.</h1>
+        </div>
+
+        <div class="md:grid grid-cols-3 gap-10 my-5 place-items-center">
+            <div class="flex flex-col items-center">
+                <div class="border-2 border-[#fc5b3f] text-xl md:text-2xl text-[#fc5b3f] font-bold w-10 md:w-14 h-10 md:h-14 rounded-full flex justify-center items-center">1</div>
+
+                <h1 class="text-xl md:text-2xl font-semibold text-gray-500 my-3">Register account</h1>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="border-2 border-[#fc5b3f] text-xl md:text-2xl text-[#fc5b3f] font-bold w-10 md:w-14 h-10 md:h-14 rounded-full flex justify-center items-center">2</div>
+
+                <h1 class="text-xl md:text-2xl font-semibold text-gray-500 my-3">Fund your account</h1>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="border-2 border-[#fc5b3f] text-xl md:text-2xl text-[#fc5b3f] font-bold w-10 md:w-14 h-10 md:h-14 rounded-full flex justify-center items-center">3</div>
+
+                <h1 class="text-xl md:text-2xl font-semibold text-gray-500 my-3">Start your trade</h1>
+            </div>
+        </div>
+        <!-- User Guides to Get started content ends -->
+    </section>
+<!-- Main container ends -->
+
+</body>
+</html>

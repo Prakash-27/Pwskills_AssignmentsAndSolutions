@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Landing Page for a Stock market broker website</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Let’s say we need to design a website for a stock market broker website. You are tasked with 
+creating a landing page for a stock market broker website. Your team lead has assigned you the 
+initial responsibility of designing a straightforward navigation bar. Note that there should be no 
+custom CSS and the output must be achieved only using Tailwind CSS.-->
+
+<!-- Main container Starts -->
+    <header class="h-auto md:h-[100%]">
+        <!-- Navigation Bar Starts -->
+        <nav class="w-[100vw] bg-[#212224] flex justify-between items-center py-4">
+            <div class="nav-img flex">
+                <img class="w-36 mx-5" src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg" alt="Logo">
+            </div>
+
+            <div class="nav-items flex justify-between items-center">
+                <button class="text-white bg-[#fc5b3f] px-5 py-3 mx-3 text-sm rounded-md font-bold hover:scale-105 hidden md:block">
+                    CREATE ACCOUNT
+                </button>
+                
+                <div class="hidden md:block">
+                    <div class="h-14 w-14 mx-5 bg-white hover:bg-[#fc5b3f] rounded-full flex justify-center items-center">
+                        <img class="h-12 w-12 rounded-full hidden md:block hover:scale-95 cursor-pointer" src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" alt="nav-avatar">
+                    </div>
+                </div>
+
+                <div class="mx-5 md:hidden text-3xl text-white cursor-pointer hover:scale-105 hover:text-[#fc5b3f]">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Bar Ends -->
+    </header>
+<!-- Main Container Ends -->
+</body>
+</html>

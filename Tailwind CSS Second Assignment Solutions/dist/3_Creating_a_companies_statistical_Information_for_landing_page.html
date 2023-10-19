@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Companies statistical Information for Landing Page</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 1. Let’s say we need to design a website for a stock market broker website. You are tasked with 
+creating a landing page for a stock market broker website. Your team lead has assigned you the 
+initial responsibility of designing a straightforward navigation bar. Note that there should be no 
+custom CSS and the output must be achieved only using Tailwind CSS.-->
+
+<!-- Main container Starts -->
+    <header class="h-auto md:h-[100%]">
+        <!-- Navigation Bar Starts -->
+        <nav class="bg-[#212224] flex justify-between items-center py-3">
+            <div class="nav-img flex">
+                <img class="w-36 mx-5" src="https://www.indonez.com/html-demo/liquid/img/user/header-logo-6ohuZh.svg" alt="Logo">
+            </div>
+    
+            <div class="nav-items flex justify-between items-center">
+                <button class="text-white bg-[#fc5b3f] px-5 py-3 mx-3 text-sm rounded-md font-bold hover:scale-105 focus:scale-95 hidden md:block">
+                    CREATE ACCOUNT
+                </button>
+                
+                <div class="hidden md:block">
+                    <div class="h-14 w-14 mx-5 bg-white hover:bg-[#fc5b3f] rounded-full flex justify-center items-center">
+                        <img class="h-12 w-12 rounded-full hidden md:block hover:scale-95 cursor-pointer" src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" alt="nav-avatar">
+                    </div>
+                </div>
+    
+                <div class="mx-5 md:hidden text-3xl text-white cursor-pointer hover:text-[#fc5b3f] hover:scale-95">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Bar Ends -->
+    </header>
+<!-- Main Container Ends -->
+
+<!-- 2. Building upon the previous assignment,  you now have to create a hero section for the landing 
+page. This section should be eye-catching and grab the visitors' attention. Take a look at the image 
+below for reference. -->
+
+<!-- Main container Starts -->
+    <section class="w-full h-auto bg-[#212224] flex flex-wrap justify-between items-center px-2 md:px-20 md:py-16">
+        <!-- Hero Section Starts -->
+        <div class="w-[100%] md:w-[50%] py-5">
+            <h1 class="text-white font-semibold text-5xl md:text-7xl py-3">
+                Multi-regulated global broker.
+            </h1>
+    
+            <p class="text-gray-400 text-base md:text-2xl py-5" style="text-wrap: balance;">
+                A trusted destination for traders worldwide, Authorised by FCA, ASIC & FSCA
+            </p>
+    
+            <Button class="w-[100%] md:w-[40%] text-white font-semibold border-2 border-[#fc5b3f] rounded-md py-3 px-3 mt-5 focus:scale-95 md:hover:scale-105 md:focus:scale-95 focus:bg-[#fc5b3f] focus:border-white">
+                DISCOVER ACCOUNTS
+            </Button>
+        </div>
+    
+        <div class="w-[100%] md:w-[50%] px-5 py-5 pt-5">
+            <img class="w-[100%] md:w-[100%]" src="https://www.indonez.com/html-demo/liquid/img/in-liquid-slide-2.svg" alt="Hero Image">
+        </div>
+        <!-- Hero Section Ends -->
+    </section>
+<!-- Main container Ends -->
+
+<!-- 3. In continuation of our previous task, where we successfully created a hero section for a landing 
+page designed for a stock market broker, it is now time to showcase some statistical information. 
+Below are the reference images for your convenience. -->
+
+<!-- Main container starts -->
+    <section class="w-[100%] bg-[#212224] flex flex-col gap-2 md:flex-row md:justify-around py-5">
+        <!-- Companies Statistical Information container starts -->
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-1.svg" alt="Alphabet Image">
+
+            <div class="bg-green-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-up" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-2.svg" alt="Microsoft Image">
+
+            <div class="bg-green-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-up" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-3.svg" alt="Facebook Image">
+
+            <div class="bg-red-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-down" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-4.svg" alt="Amazon Image">
+
+            <div class="bg-green-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-up" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+
+        <div class="w-[100%] flex gap-2 justify-center py-3">
+            <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-ticker-5.svg" alt="Tesla Image">
+
+            <div class="bg-red-400 font-bold rounded-md p-1 px-3 mx-2">
+                <h1><i class="fa fa-chevron-down" aria-hidden="true"></i> 1,740.05</h1>
+            </div>
+        </div>
+        <!-- Companies Statistical Information container ends -->
+    </section>
+<!-- Main container ends -->    
+</body>
+</html>
