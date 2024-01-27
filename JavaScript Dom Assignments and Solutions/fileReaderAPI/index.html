@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettier/2.8.8/standalone.js" integrity="sha512-6CmYrGjyq2oxBGJ2S+foHLVexl2EbevOSGYSkITDKg1BliTkQSRgWH1M1KuA8grdRpV4k7COBf/ZO0j2y4lf3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettier/2.8.8/parser-html.min.js" integrity="sha512-q7K+9MfOanEX+985GHQLPuAL9U5wZ3tZPlS0tGtWLEAjvmJpbZdVATMYhbYvjgCK6IouRjiuz132RBPBDox7uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+
+    <input type="file">
+    <div id="preview">
+
+    </div>
+
+
+</body>
+<script>
+    const fileInput = document.querySelector("input");
+    const preview = document.getElementById("preview");
+
+    // 1.text.txt
+    // fileInput.addEventListener('change', () => {
+
+    //     const fr = new FileReader();
+    //     fr.readAsText(fileInput.files[0]);
+
+    //     fr.addEventListener('load', () => {
+    //         preview.textContent = fr.result; //text.txt result
+    //     });
+    // });
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //2.spreadsheet.csv
+    // fileInput.addEventListener('change', () => {
+
+    //     const fr1 = new FileReader();
+    //     fr1.readAsText(fileInput.files[0]);
+
+    //     fr1.addEventListener('load', () => {
+    //        const csv = fr1.result; // spreadsheet.csv result that we are converting or embbeding into array by using NewLine 
+
+    //        const csvArray = csv.split('\r\n').map((line) => { // embbeding array using newline to convert the csv to newline we need to split the csv by '\r\n' to convert it as array with newline
+    //         return line.split(','); // And then splited newline array is split with ,.
+    //        });
+
+    //        console.log(csvArray);
+
+    //        const table = document.createElement('table');
+
+    //        csvArray.forEach((line, index) => {
+    //           const tr = document.createElement('tr');
+    //           line.forEach(cell => {
+    //               let td;
+    //               if(index === 0){
+    //                   td = document.createElement('th');
+    //               } else {
+    //                   td = document.createElement('td');
+    //               }
+    //               // const td = document.createElement('td');
+    //               td.textContent = cell;
+    //               tr.appendChild(td);
+    //           });
+    //           table.appendChild(tr);
+    //        });
+    //        preview.appendChild(table);
+
+    //        const html = preview.innerHTML;
+
+    //        const pre = document.createElement('pre');
+    //        const code = document.createElement('code');
+
+    //        code.innerText = prettier.format(html, {
+    //            parser: "html",
+    //            plugins: prettierPlugins,
+    //        });
+
+    //        pre.appendChild(code);
+    //        document.body.appendChild(pre);
+    //     });
+    // });
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //3.pexels_Bus.jpg
+    fileInput.addEventListener('change', () => {
+    
+        const fr2 = new FileReader();
+        fr2.readAsDataURL(fileInput.files[0]);
+    
+        // 1.text.txt
+        fr2.addEventListener('load', () => {
+            const url = fr2.result; 
+            // console.log(url);
+
+            // alter
+            // const image = document.createElement('img');
+            // image.src = url;
+            // preview.appendChild(image);
+
+            const img = new Image();
+            img.src = url;
+            // preview.appendChild(img);
+
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                // context.filter = 'grayscale(0.5)';
+                // context.filter = 'grayscale(1)';
+                // context.filter = 'blur(1px)';
+                // context.filter = 'saturate(0)';
+                // context.filter = 'saturate(2)';
+                context.drawImage(img, 0, 0);
+                context.font = '60px serif';
+                context.fillText('wish you were here', 30, 100);
+                preview.appendChild(canvas);
+
+                canvas.toBlob((blob) => {
+                    const formData = new FormData();
+                    formData.append('img', blob, 'img.png');
+
+                    fetch('https:/httpbin.org/post', {
+                        method: "POST",
+                        body: formData,
+                    })
+                        .then(res => res.json())
+                        .then(res => console.log(res));
+                });
+            }
+
+        });
+    });
+</script>
+</html>

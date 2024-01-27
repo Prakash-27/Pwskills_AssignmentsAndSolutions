@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      div {
+        margin: 10px 0px;
+      }
+
+      .accepted {
+        border: 2px solid rgb(0, 182, 24);
+      }
+
+      .rejected {
+        border: 2px solid rgb(182, 27, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 4. You are tasked to create form validation using JS DOM. Ensure
+            that the username must be at least 3 characters long, and the
+            password must be at least 8 characters long. On form
+            submission, display an alert stating "Form Validation successful"
+            if the conditions are met, otherwise, show "Form Validation
+            failed." Remember, on form submission, the webpage must not
+            be reloaded. 
+    -->
+    <form onsubmit="validateAndSubmit(event)" class="signup-form">
+      <h1>Sign Up Form</h1>
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="( Minimum 3 characters )"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="( Minimum 8 characters )"
+          autocomplete="off"
+        />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      const form = document.querySelector(".signup-form");
+      const namePattern = /^[a-zA-Z0-9]{1,3}$/;
+      const emailPattern = /^[a-zA-Z0-9]{4,20}@[a-z]{3,10}.[a-z]{1,3}/;
+      const passwordPattern = /^.{1,8}$/;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        // console.log(event);
+        const namePatternResult = namePattern.test(form.name.value);
+        const emailPatternResult = emailPattern.test(form.email.value);
+        const passwordPatternResult = passwordPattern.test(form.password.value);
+        console.log(namePatternResult, emailPatternResult, passwordPatternResult);
+        if (namePatternResult && passwordPatternResult && emailPatternResult) {
+            alert("Form Validation Successfull !!");
+        } else {
+            alert("Form Validation Failed !!");
+        }
+      });
+
+      form.name.addEventListener("keyup", (event) => {
+        const namePatternResult = namePattern.test(form.name.value);
+        console.log(namePatternResult);
+        if (namePatternResult) {
+            form.name.setAttribute("class", "accepted");
+        } else {
+            form.name.setAttribute("class", "rejected");
+        }
+      });
+
+      form.email.addEventListener("keyup", (event) => {
+        const emailPatternResult = emailPattern.test(form.email.value);
+        console.log(emailPatternResult);
+        if (emailPatternResult) {
+            form.email.setAttribute("class", "accepted");
+        } else {
+            form.email.setAttribute("class", "rejected");
+        }
+      });
+
+      form.password.addEventListener("keyup", (event) => {
+        const passwordPatternResult = passwordPattern.test(form.password.value);
+        console.log(passwordPatternResult);
+        if (passwordPatternResult) {
+            form.password.setAttribute("class", "accepted");
+        } else {
+            form.password.setAttribute("class", "rejected");
+        }
+      });
+
+    //Alter Method:  
+    //   function validateAndSubmit(event) {
+    //     event.preventDefault();
+    //     console.log("Entered");
+    //     const name = document.getElementById("name");
+    //     const email = document.getElementById("email");
+    //     const password = document.getElementById("password");
+
+    //     if (name.value.length >= 3 && password.value.length >= 8) {
+    //       alert("Form Validation Successfull !!");
+    //     } else {
+    //       alert("Form Validation Failed !!");
+    //     }
+    //   }
+    </script>
+  </body>
+</html>

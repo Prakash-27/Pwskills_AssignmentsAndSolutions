@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <!-- 3. You are tasked with building a simple web counter that displays
+            two buttons: "+" and "-". When the user clicks the "+" button, the
+            counter should increment by one, and when the user clicks the
+            "-" button, the counter should decrement by one. If the counter
+            goes below zero, you must notify the user through an alert. 
+    -->
+    <h1>Counter</h1>
+    <h1>
+      <span><button onclick="increment()" class="plusbutton">+</button></span>
+      <span id="count">0</span>
+      <span><button onclick="decrement()" class="minusbutton">-</button></span>
+    </h1>
+
+    <script>
+      const count = document.getElementById("count");
+
+      function increment() {
+        count.innerHTML = Number(count.innerHTML) + 1;
+      }
+
+      function decrement() {
+        if (Number(count.innerHTML) > 0) {
+          count.innerHTML = Number(count.innerHTML) - 1;
+        } else {
+          alert("Counter is going beyond 0.");
+        }
+      }
+
+      //Alter Method:
+      // const count = document.getElementById("count");
+      // const plusButton = document.querySelector(".plusbutton");
+      // const minusButton = document.querySelector(".minusbutton");
+
+      // plusButton.addEventListener("click", event => {
+      //     count.innerHTML = Number(count.innerHTML) + 1;
+      //     console.log(count.innerHTML);
+      // }); //we can use textContent, innerText instead of innerHTML
+
+      // minusButton.addEventListener("click", event => {
+      //     if (Number(count.innerHTML) > 0) {
+      //         count.innerHTML = Number(count.innerHTML) - 1;
+      //         console.log(count.innerHTML);
+      //     } else {
+      //         alert("Counter is going beyond 0.")
+      //     }
+      // });
+    </script>
+  </body>
+</html>

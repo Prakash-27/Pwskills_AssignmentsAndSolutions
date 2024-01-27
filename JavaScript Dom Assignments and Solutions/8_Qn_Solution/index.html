@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Clock Timer Automatically</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000000;
+        color: white;
+        font-size: 48px;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+
+      .timer {
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 8. Your task is to create a webpage that displays the time in hours,
+            minutes, and seconds in the center of the screen. Format the
+            time to have 2 digits for hours, minutes, and seconds, and use
+            the time's values to assign a hex code to the background. The
+            timer should update in real-time without any user interaction. For
+            Example: If the time is 12:10:50 the background color of the
+            webpage will have the hex code “#121050”. 
+    -->
+    <div class="timer" id="timer">
+      <span id="hours">00</span> : <span id="minutes">00</span> :
+      <span id="seconds">00</span>
+    </div>
+
+    <script>
+      const updateTimer = () => {
+        const currentTime = new Date();
+        const currentTimeHours = currentTime.getHours().toString().padStart(2, "0");
+        const currentTimeMinutes = currentTime.getMinutes().toString().padStart(2, "0");
+        const currentTimeSeconds = currentTime.getSeconds().toString().padStart(2, "0");
+
+        // console.log(`${currentTimeHours}:${currentTimeMinutes}:${currentTimeSeconds}`);
+
+        const hexCode = `#${currentTimeHours}${currentTimeMinutes}${currentTimeSeconds}`;
+       
+        const hours = document.querySelector("#hours");
+        const minutes = document.querySelector("#minutes");
+        const seconds = document.querySelector("#seconds");
+        hours.innerHTML = currentTimeHours;
+        minutes.innerHTML = currentTimeMinutes;
+        seconds.innerHTML = currentTimeSeconds;
+
+        document.body.style.backgroundColor = hexCode;
+      };
+
+      setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>
